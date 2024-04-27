@@ -63,6 +63,10 @@ const refreshUserToken = async (refreshToken) => {
     );
 
     // Update token in account.js
+    if (response.data.data == null) {
+      console.log("Token expired, go get your new token");
+      throw Error("Token expired");
+    }
     const tokenData = response.data.data;
     const accounts = require("./accounts.js");
     const updatedAccounts = accounts.map((tkn) => {
