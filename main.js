@@ -109,7 +109,7 @@ const main = async () => {
 
     // 86400 seconds (1 day)
     setInterval(runCode, 3600 * 1000);
-    console.log("Retrying in 24 hours......");
+    console.log("Retrying in 1 hours......");
   } catch (error) {
     failedLog(error.message);
   }
