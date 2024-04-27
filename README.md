@@ -36,13 +36,14 @@ npm install
 To access the Authorization token required for the `accounts.js` file, follow these steps:
 
 1. Open your web browser and go to the Saakaru website.
-2. Log in / Register to your account (You can use my invite code `X1OFZRL9`).
-3. Open the developer tools by pressing `F12` or right-clicking on the page and selecting "Inspect" or "Inspect Element".
-4. Navigate to the "Network" tab.
-5. Perform a request that requires authentication, such as refreshing the page or accessing a protected resource.
-6. Look for the request in the list of network requests (sugested to find `refresh-token` request).
-7. Click on the request to view its details.
-8. In the `response` section, you should see something like this
+2. Log in / Register by connecting your twitter account.
+3. Enter invite code (You can use my invite code `X1OFZRL9`) or choose Skip & Continue.
+4. Open the developer tools by pressing `F12` or right-clicking on the page and selecting "Inspect" or "Inspect Element".
+5. Navigate to the "Network" tab.
+6. Perform a request that requires authentication, such as refreshing the page or accessing a protected resource.
+7. Look for the request in the list of network requests (sugested to find `refresh-token` request).
+8. Click on the request to view its details.
+9. In the `response` section, you should see something like this
 
 ```
 {

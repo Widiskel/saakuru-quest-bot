@@ -70,6 +70,8 @@ const main = async () => {
         infoLog(`Total Quest      : ${taskIds.length}`);
         infoLog(`Completed Quest  : ${completedTaskId.length}`);
         infoLog(`Uncomplete Quest : ${uncompletedTaskIds.length}`);
+
+        console.log();
         console.log(colors.cyan("========================================"));
         console.log(colors.cyan("============   DOING QUEST  ============"));
         console.log(colors.cyan("========================================"));
@@ -80,7 +82,7 @@ const main = async () => {
           );
 
           // Log task details
-          infoLog("");
+          console.log();
           infoLog(`-------------------- CLAIMING -------------------`);
           infoLog(`Task ID: ${taskDetails.id}`);
           infoLog(`Task Name: ${taskDetails.name}`);
@@ -100,6 +102,7 @@ const main = async () => {
           }
           infoLog(`-------------------------------------------------`);
         }
+        console.log();
         console.log(colors.yellow(`ACCOUNT ${i + 1} Process complete`));
         console.log();
       }
