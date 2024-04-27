@@ -7,7 +7,7 @@ Saakaru Quest Bot a tool for auto claim Saakaru daily quest.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Widiskel/mint-blockchain-forest-bot.git
+git clone https://github.com/Widiskel/saakuru-quest-bot.git
 ```
 
 2. Install dependencies:
@@ -24,20 +24,19 @@ npm install
 
 ```json
 [
-  "Bearer xxx",
-  "Bearer xxx",
+  ["TOKEN", "REFRESH_TOKEN"],
+  ["TOKEN", "REFRESH_TOKEN"],
+  ["TOKEN", "REFRESH_TOKEN"],
   ...
 ]
 ```
-
-Note: You can obtain your MintChain API tokens by registering on the MintChain platform and retrieving them from your account settings.
 
 ### Accessing Authorization Token
 
 To access the Authorization token required for the `accounts.js` file, follow these steps:
 
-1. Open your web browser and go to the MintChain website.
-2. Log in to your account.
+1. Open your web browser and go to the Saakaru website.
+2. Log in / Register to your account (You can use my invite code `X1OFZRL9`).
 3. Open the developer tools by pressing `F12` or right-clicking on the page and selecting "Inspect" or "Inspect Element".
 4. Navigate to the "Network" tab.
 5. Perform a request that requires authentication, such as refreshing the page or accessing a protected resource.
