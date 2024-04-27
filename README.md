@@ -41,7 +41,7 @@ To access the Authorization token required for the `accounts.js` file, follow th
 4. Open the developer tools by pressing `F12` or right-clicking on the page and selecting "Inspect" or "Inspect Element".
 5. Navigate to the "Network" tab.
 6. Perform a request that requires authentication, such as refreshing the page or accessing a protected resource.
-7. Look for the request in the list of network requests (sugested to find `refresh-token` request).
+7. Look for the request in the list of network requests and find `refresh-token` request.
 8. Click on the request to view its details.
 9. In the `response` section, you should see something like this
 
