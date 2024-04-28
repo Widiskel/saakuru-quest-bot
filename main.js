@@ -111,8 +111,8 @@ const main = async () => {
     await runCode();
 
     // 86400 seconds (1 day)
-    setInterval(runCode, 3600 * 1000);
-    console.log("Retrying in 1 hours......");
+    setInterval(runCode, 10 * 60 * 1000); // Refresh every 10 minutes
+    console.log("Retrying in 10 minutes...");
   } catch (error) {
     failedLog(error.message);
   }
