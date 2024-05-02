@@ -36,7 +36,7 @@ npm install
 To access the Authorization token required for the `accounts.js` file, follow these steps:
 
 1. Open your web browser and go to the Saakaru website.
-2. Log in / Register to (Sakaru)[https://gainz.saakuru.com/dashboard] by connecting your twitter account.
+2. Log in / Register to [Sakaru](https://gainz.saakuru.com/dashboard) by connecting your twitter account.
 3. Enter invite code (You can use my invite code `X1OFZRL9`) or choose Skip & Continue.
 4. Open the developer tools by pressing `F12` or right-clicking on the page and selecting "Inspect" or "Inspect Element".
 5. Navigate to the "Network" tab.
