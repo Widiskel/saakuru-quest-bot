@@ -92,10 +92,10 @@ const claimQuestTask = async (token, questId, taskId) => {
 
 //MAIN SECTION
 async function runScript() {
-  console.log("========================================");
-  console.log("=          Saakaru Quest Bot           =");
-  console.log("=         Created by Widiskel          =");
-  console.log("========================================");
+  console.log("=============================");
+  console.log("=     Saakaru Quest Bot     =");
+  console.log("=   Created by Widiskel     =");
+  console.log("=============================");
   console.log();
   console.log(`Processing ACCOUNT `);
   console.log();
@@ -111,7 +111,7 @@ async function runScript() {
   if (userInfo == null) {
     (token = newToken), (refreshToken = newRefreshToken);
   }
-  console.log("========================================");
+  console.log("=============================");
   console.log("Account information retrieved successfully");
   console.log(`ID               : ${userInfo.data.id}`);
   console.log(`Twitter ID       : ${userInfo.data.twitterId}`);
@@ -144,20 +144,20 @@ async function runScript() {
   console.log(`Uncomplete Quest : ${uncompletedTaskIds.length}`);
 
   console.log();
-  console.log("========================================");
-  console.log("============   DOING QUEST  ============");
-  console.log("========================================");
+  console.log("=============================");
+  console.log("=        DOING QUEST        =");
+  console.log("=============================");
 
   for (const taskId of uncompletedTaskIds) {
     const taskDetails = currentQuest.data.tasks.find((tsk) => tsk.id == taskId);
 
     // Log task details
-    console.log();
-    console.log(`-------------------- CLAIMING -------------------`);
+    console.log(``);
+    console.log(`---------- CLAIMING --------`);
     console.log(`Task ID: ${taskDetails.id}`);
     console.log(`Task Name: ${taskDetails.name}`);
     console.log(`Task Description: ${taskDetails.description}`);
-    console.log(`-------------------------------------------------`);
+    console.log(`-----------------------------`);
 
     try {
       const claim = await claimQuestTask(token, currentQuest.data.id, taskId);
@@ -166,7 +166,7 @@ async function runScript() {
       // Handle error if claimQuestTask fails
       failedLog(`Error claiming task ${taskId}`);
     }
-    console.log(`-------------------------------------------------`);
+    console.log(`-----------------------------`);
   }
   console.log();
   console.log(`ACCOUNT Process complete`);
