@@ -68,7 +68,7 @@ To run the bot, execute the following command:
 npm start
 ```
 
-### BROWSER CONSOLE
+### BROWSER CONSOLE (MOBILE USE KIWI BROWSER)
 
 copy response of Accessing Authorization Token step no 9.
 
