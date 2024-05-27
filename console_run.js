@@ -100,8 +100,8 @@ async function runScript() {
   console.log(`Processing ACCOUNT `);
   console.log();
 
-  let token = user.token;
-  let refreshToken = user.refreshToken;
+  let token = user.data.token;
+  let refreshToken = user.data.refreshToken;
 
   const [newToken, newRefreshToken, userInfo] = await fetchUserInfo(
     token,
