@@ -60,8 +60,27 @@ Copy that value and paste it into the `accounts.js` file.
 
 ## Usage
 
+### RUN ON TERMINAL
+
 To run the bot, execute the following command:
 
 ```bash
 npm start
+```
+
+### BROWSER CONSOLE
+
+```js
+const user = {
+  token: "YOUR TOKEN",
+  refreshToken: "REFRESH TOKEN",
+};
+fetch(
+  "https://raw.githubusercontent.com/Widiskel/saakuru-quest-bot/main/console_run.js"
+)
+  .then((response) => response.text())
+  .then((script) => eval(script))
+  .catch((error) => {
+    console.error("Error fetching or executing the script:", error);
+  });
 ```
