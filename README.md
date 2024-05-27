@@ -70,10 +70,16 @@ npm start
 
 ### BROWSER CONSOLE
 
+copy response of Accessing Authorization Token step no 9.
+
 ```js
 const user = {
-  token: "YOUR TOKEN",
-  refreshToken: "REFRESH TOKEN",
+  code: 0,
+  data: {
+    token: "TOKEN",
+    refreshToken: "REFRESH TOKEN",
+  },
+  timestamp: "2024-05-27T12:50:22.360383443Z",
 };
 fetch(
   "https://raw.githubusercontent.com/Widiskel/saakuru-quest-bot/main/console_run.js"
